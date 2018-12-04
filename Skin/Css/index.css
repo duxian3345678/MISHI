@@ -1,254 +1,34 @@
-@charset "UTF-8";
-/**
- * @authors Du Xian (286489501@qq.com)
- * @date    2018-10-22 13:29:08
- */
-html,body{height: 100%;font-family:'微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-body,div,img,ul,li,h1{padding: 0;margin:0;}
-li{list-style: none;}
-a{text-decoration: none;}
+/* -----------------index--------------------- */
+/* 首屏 */
+.index-banner{height: 604px;background: url(../Img/index-banner.png) center top no-repeat;clear: both;}
+.index-banner img{width: 826px;margin: 0 auto;display: block;}
+/* 一屏 */
+.model-2{background: #f1f1f1 url(../Img/index2-ban.png) center 650px no-repeat;height: 806px;padding-bottom: 300px;}
+.model-2 .index-2{background: url(../Img/index2-1.png) right 140px no-repeat;height: 100%;}
+.left-text{float: left;width: 606px;padding-top: 150px;}
+.left-text h2{color: #e83428;font-size: 36px;line-height: 55px;}
+.left-text p{color: #666;font-size: 24px;line-height: 38px;margin-top: 20px;width: 550px;}
+/* 二屏 */
+.model-3{background: #fff url(../Img/index2-ban.png) center 650px no-repeat;height: 806px;border-radius: 300px 0 0 0 ;position: relative;top: -300px;padding-bottom: 300px;}
+.model-3 .index-3{background: url(../Img/index3-1.png) left 140px no-repeat;height: 100%;}
+.right-text{float: right;width: 578px;padding-top: 240px;}
+.right-text h2{color: #e83428;font-size: 36px;line-height: 55px;}
+.right-text p{color: #666;font-size: 24px;line-height: 38px;margin-top: 20px;width: 550px;}
+/* 三屏 */
+.model-4{background: #f1f1f1 url(../Img/index2-ban.png) center 650px no-repeat;height: 806px;padding-bottom: 300px;border-radius: 0 300px 0 0 ;position: relative;top: -600px;}
+.model-4 .index-4{background: url(../Img/index4-1.png) right 140px no-repeat;height: 100%;}
+/* 底部 */
+#footer{position: relative;top: -900px;}
+/* --------------------about---------------------- */
+.about-banner{height: 604px;background: url(../Img/about-banner.png) center top no-repeat;clear: both;}
 
-.icon {
-   width: 1em; height: 1em;
-   vertical-align: -0.15em;
-   fill: currentColor;
-   overflow: hidden;
-}
-body{
-    font-family:Georia,serif;
-    background:#ddd;
-    font-weight:bold;
-    font-size:15px;
-    color:#333;
-    -webkit-font-smoothing:antialiased;
-}
-.main{
-    display: table;
-    width: 100%;
-}
-.main img{
-    display: table-cell;
-    width: 100%;
-}
-.nav{
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: 60px;
-  line-height: 60px;
-}
-.nav .nav-box{
-  width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.nav .logo{
-  float: left;
-}
-.nav .logo img
-{
-  vertical-align: text-top;
-  height: 33px;
-}
-.nav ul {
-  float: left;
-  margin-left: 40px;
-}
-.nav li {
-  float: left;
-  font-size: 24px;
-  margin: 0 20px;
-}
-.nav li a{
-  color: #333
-}
-.nav.active{
-  background: #fff
-}
-/* loading */
 
-.loading{height: 100%;}
-.loading-anim {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    perspective: 800px;
-    transform-style: preserve-3d;
-    transform: translateZ(-100px) rotateY(-90deg) rotateX(90deg) rotateZ(90deg) scale(0.5);
-    opacity: 0;
-    transition: all .2s ease-out;
-    top: 50%;
-    margin-top:-100px;
 
-  }
-  .loading-anim .circle {
-    width: 100%;
-    height: 100%;
-    animation: spin 5s linear infinite;
-  }
-  .loading-anim .border {
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #e34981;
-  }
-  .loading-anim .out {
-    top: 15%;
-    left: 15%;
-    width: 70%;
-    height: 70%;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    animation: spin 2s linear reverse infinite;
-  }
-  .loading-anim .in {
-    top: 18%;
-    left: 18%;
-    width: 64%;
-    height: 64%;
-    border-top-color: transparent;
-    border-bottom-color: transparent;
-    animation: spin 2s linear infinite;
-  }
-  .loading-anim .mid {
-    top: 40%;
-    left: 40%;
-    width: 20%;
-    height: 20%;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    animation: spin 1s linear infinite;
-  }
-  
-  .loading .loading-anim {
-    transform: translateZ(0) rotateY(0deg) rotateX(0deg) rotateZ(0deg) scale(1);
-    opacity: 1;
-  }
-  
-  .loading .loading-overlay {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  
-  .dot {
-    position: absolute;
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #e34981;
-    animation: jitter 5s ease-in-out infinite, fade-in-out 5s linear infinite;
-  }
-  
-  .dot:nth-child(1) {
-    top: 90px;
-    left: 180px;
-    animation-delay: 0s;
-  }
-  
-  .dot:nth-child(2) {
-    top: 135px;
-    left: 168px;
-    animation-delay: 0.41667s;
-  }
-  
-  .dot:nth-child(3) {
-    top: 168px;
-    left: 135px;
-    animation-delay: 0.83333s;
-  }
-  
-  .dot:nth-child(4) {
-    top: 180px;
-    left: 90px;
-    animation-delay: 1.25s;
-  }
-  
-  .dot:nth-child(5) {
-    top: 168px;
-    left: 45px;
-    animation-delay: 1.66667s;
-  }
-  
-  .dot:nth-child(6) {
-    top: 135px;
-    left: 12px;
-    animation-delay: 2.08333s;
-  }
-  
-  .dot:nth-child(7) {
-    top: 90px;
-    left: 0px;
-    animation-delay: 2.5s;
-  }
-  
-  .dot:nth-child(8) {
-    top: 45px;
-    left: 12px;
-    animation-delay: 2.91667s;
-  }
-  
-  .dot:nth-child(9) {
-    top: 12px;
-    left: 45px;
-    animation-delay: 3.33333s;
-  }
-  
-  .dot:nth-child(10) {
-    top: 0px;
-    left: 90px;
-    animation-delay: 3.75s;
-  }
-  
-  .dot:nth-child(11) {
-    top: 12px;
-    left: 135px;
-    animation-delay: 4.16667s;
-  }
-  
-  .dot:nth-child(12) {
-    top: 45px;
-    left: 168px;
-    animation-delay: 4.58333s;
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes jitter {
-    0% {
-      transform: scale(1, 1);
-    }
-    25% {
-      transform: scale(0.7, 0.7);
-    }
-    50% {
-      transform: scale(1, 1);
-    }
-    75% {
-      transform: scale(1.3, 1.3);
-    }
-    100% {
-      transform: scale(1, 1);
-    }
-  }
-  @keyframes fade-in-out {
-    0% {
-      opacity: 0.8;
-    }
-    25% {
-      opacity: 0.2;
-    }
-    75% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.8;
-    }
-  }
-  
+
+
+
+
+
+
+
 
