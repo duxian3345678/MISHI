@@ -1,0 +1,37 @@
+/* --------------------about---------------------- */
+.about-banner{height: 604px;background: url(../Img/about-banner.png) center top no-repeat;clear: both;}
+/* 一屏 */
+.model-2{background: #fff;padding-bottom: 300px;}
+.about-title{text-align: center;line-height: 34px;padding: 30px 0;}
+.about-title h2{font-size: 24px;color: #e83428;}
+.about-title h2 span{background: #fff;padding: 0 20px;position: relative;}
+.about-title h2::before{content: "";width:440px;height:4px;margin: 0 auto;position: relative;top: 19px;background: #e83428;display: block;z-index: 0;}
+.about-title p{font-size: 18px;color: #666;}
+.about-2 { padding-top: 30px;overflow: hidden;}
+.about-2 .top-img img{display: block;width: 100%;}
+.about-2 .left-img{float: left;margin: 25px 40px 70px 0;width: 548px;height: 511px;}
+.about-2 .right-text{font-size: 18px;color: #666;line-height: 30px;margin-top:60px;padding-right: 26px;}
+.about-2 .right-text p{text-indent: 2em}
+/* 二屏 */
+.model-3{background: #f1f1f1 ;border-radius: 300px 0 0 0 ;position: relative;top: -300px;padding-bottom: 300px;}
+.about-3 { padding-top: 30px;overflow: hidden;}
+.about-3 .about-title h2 span{background: #f1f1f1;}
+.about-3 .time-list{padding:36px 26px 56px;overflow: hidden;margin-top: 30px;position: relative;}
+.about-3 .time-list::before{content: "";display: block;width: 39px;height: 39px;position: absolute;top: 0;left: 50%;margin-left: -19px;background: url(../Img/icon-rili.png)center no-repeat}
+.about-3 .time-list li{font-size: 18px;line-height: 30px;overflow: hidden;}
+.about-3 .time-list li div{padding: 10px 0;}
+.about-3 .time-list .list-right{float: right;width: 50%;border-left: #e83428 3px solid}
+.about-3 .time-list .list-right span{display:block;color: #e83428;background: #f6c244;height: 30px;line-height: 30px;border-radius: 15px;font-weight: bold;text-align: center;float: left;width: 114px;margin-left: -134px;}
+.about-3 .time-list .list-right p{color: #b76206;padding-left: 20px;position: relative;}
+.about-3 .time-list .list-right p::before{content: "";width: 16px;height: 16px;border-radius: 50%;background: #e83428;position: absolute;display: block;left: -9px;top: 7px;}
+.about-3 .time-list .list-left{float: left;width: 50%;border-right: #e83428 3px solid;margin-left: -3px}
+.about-3 .time-list .list-left span{display:block;color: #fff;background: #e83428;height: 30px;line-height: 30px;border-radius: 15px;font-weight: bold;text-align: center;float: right;width: 114px;margin-right: -134px;}
+.about-3 .time-list .list-left p{color: #e83428;padding-right: 20px;position: relative;text-align: right}
+.about-3 .time-list .list-left p::after{content: "";width: 16px;height: 16px;border-radius: 50%;background: #f6c244;position: absolute;display: block;right: -10px;top: 7px;}
+/* 三屏 */
+.model-4{background: #fff;padding-bottom: 300px;border-radius: 0 300px 0 0 ;position: relative;top: -600px;}
+.about-4 { padding: 30px 0 60px;overflow: hidden;}
+.about-4 .brand-list{overflow: hidden;margin-top: 30px;}
+.about-4 .brand-list li{float: left;width: 189px;height: 51px;margin:20px 23px;}
+/* 底部 */
+#footer{position: relative;top: -900px;}

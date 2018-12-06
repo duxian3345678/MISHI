@@ -1,0 +1,21 @@
+/* -----------------store--------------------- */
+dl,dt,dd{margin: 0;padding: 0;}
+/* 首屏 */
+.store-banner{height: 604px;background: url(../Img/index-banner.png) center top no-repeat;clear: both;}
+/* 一屏 */
+.model-2{background: #fff }
+.store-2{margin-top: 30px;}
+.store-2 dl{overflow: hidden;margin-top: 40px;line-height:36px;font-size: 24px; padding-left: 136px;position: relative; }
+.store-2 dl dt{color: #fff;background: #e83428;width: 110px;text-align: center;height: 36px;position: absolute;left: 0;top: 0 }
+.store-2 dl dd{float: left;color: #6d6d6d;margin-right: 24px;cursor: pointer}
+.store-2 dl dd.active{color: #e83428}
+/* 二屏 */
+.model-3{background: #fff; overflow: hidden;margin-top: 40px;}
+.store-3{border-top: #e83428 2px solid}
+.store-list{width: 1250px; }
+.store-list li{float: left;margin-right: 16px; width: 288px;height: 130px;text-align: center;font-size: 18px;margin-top: 40px;position: relative;}
+.store-list li img{display: block;width: 100%;}
+.store-list li p{color:#e83428;line-height:40px;position: absolute;bottom:4px;left: 0;width: 100%;}
+
+/* 底部 */
+#footer{position: relative;margin-top:124px; }

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>米氏孕婴童</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="icon" href="favicon.ico">
+    <link href="Skin/Css/public.css" rel="stylesheet">
+    <link href="Skin/Css/store.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="P-header">
+        <div class="main">
+            <h1 class="logo"><a href="/" title="米氏孕婴童"><img src="Skin/Img/logo.png" alt="米氏孕婴童"></a></h1>
+            <nav>
+                <a href="index.html" data-name="index" title="首页">首页</a>
+                <a href="about.html" data-name="about" title="关于米氏">关于米氏</a>
+                <a href="join.html" data-name="join" title="加盟米氏">加盟米氏</a>
+                <a href="store.html" data-name="store" class="active" title="米氏门店">米氏门店</a>
+                <a href="honor.html" data-name="honor" title="公司荣誉">公司荣誉</a>
+            </nav>
+            <div class="phone-code">
+                <p><img src="Skin/Img/icon-wxnum.png" alt=""><span>扫码关注</span></p>
+                <div class="code-img">
+                    <img src="Skin/Img/wxNum.png" alt="米氏孕婴童">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="store-banner">
+    </div>
+    <div id="app">
+        <div class="model-2">
+            <div class="main store-2">
+                <dl class="province">
+                    <dt>地区>></dt>
+                    <dd data-id="0" class="active">全部</dd>
+                    <dd v-for="provinList in province" v-on:click="makeActive(provinList.provin,provinList.id)"
+                        :data-id="provinList.id">{{provinList.provin}}</dd>
+                </dl>
+                <dl class="city">
+                    <dt>城市>></dt>
+                    <dd class="active">全部</dd>
+                    <dd class="active">{{city}}</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="model-3">
+            <div class="main store-3">
+                <ul class="store-list" v-for="stores in storeList">
+                    <li>
+                        <a :href="stores.url" target="_blank">
+                            <img src="skin/img/store-list.png" alt="">
+                            <p>{{stores.cityname}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="main">
+            <div class="dynamic">
+                <h3>联系我们<span>DYNAMIC</span></h3>
+                <form>
+                    <div class="input-text">
+                        <span>您的姓名：</span>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="input-text">
+                        <span>您的电话：</span>
+                        <input type="text" name="phone">
+                    </div>
+                    <div class="input-button">
+                        <input type="submit" value="提交">
+                    </div>
+                </form>
+            </div>
+            <div class="email">
+                <img src="skin/Img/icon-email.png" alt="米氏加盟邮箱">
+                <p>米氏加盟邮件</p>
+                <p>msjm@mishiyy.com</p>
+            </div>
+        </div>
+        <div class="filing">
+            <p>
+                Copyright © 2001-2018 mishiyy.com All Rights Reserved. | 米氏云商（北京）科技有限公司 版权所有<br />
+                北京市朝阳区国粹苑C座2050 京ICP备 15052447号-2 <br />
+                本网站所刊登的各种新闻﹑信息和各种专题专栏资料，均为米氏集团版权所有，未经协议授权，禁止下载使用。
+            </p>
+        </div>
+    </footer>
+</body>
+<script src="Skin/JS/jquery.min.js"></script>
+<script src="Skin/JS/store.js"></script>
+<script src="Skin/JS/vue.js"></script>
+<script>
+    "use strict"
+    var _provin = [],
+        _city = []
+    for (const i in shopinfo) {
+        _provin.push({ "provin": shopinfo[i].cityname, id: parseInt(i) + 1 })
+        for (const j in shopinfo[i].shop) {
+            _city.push({
+                "cityname": shopinfo[i].shop[j].shopname,
+                "parentId": parseInt(i) + 1,
+                "cityId": parseInt(j) + 1,
+                "url": shopinfo[i].shop[j].url
+            })
+        }
+    }
+    var app = new Vue({
+        el: "#app",
+        data: {
+            province: _provin,
+            city: "",
+            storeList: _city
+        },
+        methods: {
+            makeActive: function (item, id) {
+                this.city = item
+                this.storeList = selectChildObj(id, _city)
+            }
+        }
+    })
+    function selectChildObj(id, arr) {
+        var newArr = []
+        arr.forEach((item, index) => {
+            if (item.parentId == id) {
+                newArr.push(arr[index])
+            }
+        });
+        return newArr
+    }
+</script>
+
+</html>

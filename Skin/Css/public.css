@@ -13,7 +13,7 @@ body{min-width: 1200px;}
 /* 头部 */
 #P-header{background: #fff;height: 96px;}
 #P-header::before{content: "";height:3px ;display: block;background: #e83428}
-#P-header .logo{line-height: 93px;float: left; margin-right: 70px;}
+#P-header .logo{line-height: 93px;float: left; margin-right: 70px;height: 93px;}
 #P-header .logo a{vertical-align: middle;height: 42px;}
 #P-header .logo img{height: 42px;vertical-align: text-top}
 nav{float: left;line-height: 93px;font-size: 18px;}

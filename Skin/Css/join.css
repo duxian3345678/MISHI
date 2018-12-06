@@ -1,0 +1,40 @@
+/* --------------------join---------------------- */
+body{background: #f1f1f1}
+h1,h2,h3{font-weight: normal}
+.join-banner{height: 848px;background: url(../Img/join-banner.png) center top no-repeat;clear: both;padding-top: 1px}
+.join-banner img{width: 763px;margin: 96px auto 0;display: block;}
+.join-banner .join-button{width: 450px;height: 90px;line-height: 90px;background: #af2a22;color: #fff;display: block;text-align: center;font-size: 30px;box-shadow: #5e1b03 0px 5px 5px;margin: 370px auto;}
+/* 一屏 */
+.model-2{background: #f1f1f1;margin-top: 60px;overflow: hidden;padding-bottom: 80px;}
+.join-title{text-align: center;line-height: 34px;padding: 30px 0 ;}
+.join-title h2{font-size: 36px;color: #d34f37;line-height: 48px;height: 48px;background: url(../Img/join-title.png) center no-repeat}
+.join-title p{font-size: 18px;color: #db462b;}
+.join-icm{float: left;width: 216px;height: 300px;text-align: center;margin: 40px;color:#a13121 }
+.join-icm img{display: block;margin: 0 auto 20px;}
+.join-icm h2{font-size: 30px;line-height: 48px;}
+.join-icm p{text-align: left;line-height: 30px;font-size: 16px; margin-top: 16px;}
+/* 二屏 */
+.model-3{background: #f1f1f1;clear: both;overflow: hidden;background: url(../Img/join3-1.png) center no-repeat;height: 980px;}
+.join-list{width: 1260px;}
+.join-list li{float: left;width: 260px;height: 330px;margin-right: 52px;margin-top: 42px;background: #fff;box-shadow: #a95555 0px 2px 20px}
+.join-list li h2{text-align: center;font-size: 30px;color: #f5d7c1;background: url(../Img/join3-2.png) center no-repeat;height: 120px;line-height:120px;}
+.join-list li p{font-size: 15px;line-height: 24px;color: #999;padding:12px 14px;}
+/* 三屏 */
+.model-4{background: #f1f1f1;clear: both;padding-top: 40px;padding-bottom:90px;}
+.join-policy{padding: 40px 60px;box-shadow:#a5a5a5 0px 2px 30px; }
+.join-policy p{background: url(../Img/icon-xing.png) no-repeat left center;padding-left: 50px;font-size: 24px;color: #333;line-height: 44px;}
+.join-policy p strong{font-weight: normal;color: #a13121;display: inline-block;width:160px;}
+/* 四屏 */
+.model-5{background: #e83428;padding-bottom: 150px;padding-top: 20px;}
+.join-title.color2 h2{color: #fff;background: url(../Img/join-title2.png) center no-repeat}
+.join-title.color2 p{font-size: 18px;color: #f49a94;}
+.model-5 .from-box{width: 1000px;height: 590px;box-shadow: #030000 0 2px 20px;margin: 0 auto;background: #fff;}
+.model-5 .from-box h3{font-size: 36px;line-height: 48px;padding: 40px 0;text-align: center;color: #7e1d1d}
+.model-5 .from-box .join-input-text{ width:396px;height: 70px;border: 1px solid #030000;border-radius: 3px;line-height: 70px;float:left;margin:24px 44px 0; }
+.model-5 .from-box .join-input-text.long-text{width:882px;}
+.model-5 .from-box .join-input-text input{font-size: 16px; float: left;margin-left: 80px;border: none;outline: none;border-left: 1px solid #030000;height: 68px;padding-left: 20px;width: 290px;}
+.model-5 .from-box .join-input-text.long-text input{width:780px;}
+.model-5 .from-box .join-input-button{clear: both;overflow: hidden;}
+.model-5 .from-box .join-input-button input{width: 270px;height: 54px;line-height: 54px;background: #af2a22;color: #fff;display: block;text-align: center;font-size: 30px;margin: 170px auto;border: none;outline: none}
+/* 底部 */
+#footer{position: relative;margin-top:124px; }

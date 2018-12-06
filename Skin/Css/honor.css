@@ -1,0 +1,39 @@
+/* --------------------honor---------------------- */
+h1,h2,h3{font-weight: normal}
+.honor-banner{height: 699px;background: url(../Img/honor-banner.png) center top no-repeat;clear: both;padding-top: 1px}
+.honor-banner img{width: 1075px;margin:180px auto 0;display: block;}
+/* 一屏 */
+.model-2{background: #fff;}
+.honor-title{text-align: center;line-height: 34px;padding: 30px 0 ;}
+.honor-title h2::before{content: "01";font-size: 70px;color: #e83428;display: block;line-height:74px;}
+.honor-title h2{font-size: 40px;color: #404040;line-height: 50px;}
+.honor-title p{font-size: 20px;color: #404040;}
+.honor-title p::after{content: "";display: block;width: 86px;height: 1px;background: #e83428;margin: 0 auto;}
+.honor01-banner{background: url(../Img/honor2-1.png) no-repeat center;text-align: center;line-height: 300px;height: 300px;margin: 30px 0 0;font-size: 50px;color: #fff;letter-spacing:10px}
+/* 二屏 */
+.model-3{background: #f1f1f1;clear: both;overflow: hidden;background: url(../Img/honor3-1.png) center no-repeat;height: 910px;}
+.honor-list{position: relative; margin: 70px 100px 0;height: 590px;}
+.honor-list li{line-height: 24px;font-size: 20px;text-align: left;position: absolute; width: 210px;}
+.honor-list li img{display: block;}
+.honor-list li p{margin-top: 10px;}
+.honor-list li.li1{left: 0; top:150px; }
+.honor-list li.li2{left: 216px; top:100px; }
+.honor-list li.li3{left: 432px; top:50px; }
+.honor-list li.li4{left: 648px; top:0px; }
+.honor-list li.li5{left: 390px; top:330px; }
+.honor-list li.li6{left: 606px; top:280px; }
+.honor-list li.li7{left: 822px; top:230px; }
+.honor-title h2.h02::before{content: "02";}
+/* 三屏 */
+.model-4{background:url(../Img/honor4-1.png);clear: both;padding-top: 160px;padding-bottom:160px;}
+.honor-show img{display: block; margin: 0 auto;}
+/* 四屏 */
+.model-5{padding-top: 70px;}
+.explain{overflow: hidden;display: flex; justify-content: center}
+.explain li{flex: 0 1 auto; font-size: 30px;color: #404040 ;line-height: 80px;height: 80px; padding: 0 80px; position: relative;}
+.explain li img{padding: 0 20px;display:inline-block;vertical-align: middle}
+.explain .border-li::before{content: "";height: 36px;width: 1px;background: #404040;display: block;top:22px;position: absolute;left: 0; }
+.explain .border-li::after{content: "";height: 36px;width: 1px;background: #404040;display: block;top:22px;position: absolute;right: 0; }
+.honor-5 h2{letter-spacing: 1em;font-size: 25px;line-height: 40px;text-align: center; margin-top: 30px;}
+/* 底部 */
+#footer{position: relative;margin-top:124px; }
