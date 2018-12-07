@@ -104,9 +104,9 @@
     "use strict"
     var _provin = [],
         _city = []
-    for (const i in shopinfo) {
+    for (var i in shopinfo) {
         _provin.push({ "provin": shopinfo[i].cityname, id: parseInt(i) + 1 })
-        for (const j in shopinfo[i].shop) {
+        for (var j in shopinfo[i].shop) {
             _city.push({
                 "cityname": shopinfo[i].shop[j].shopname,
                 "parentId": parseInt(i) + 1,
@@ -131,7 +131,7 @@
     })
     function selectChildObj(id, arr) {
         var newArr = []
-        arr.forEach((item, index) => {
+        arr.forEach(function(item, index) {
             if (item.parentId == id) {
                 newArr.push(arr[index])
             }
