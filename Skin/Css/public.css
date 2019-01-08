@@ -4,12 +4,13 @@
  * @date    2018-10-22 13:29:08
  */
 html,body{height: 100%;font-family:'微软雅黑', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
-body,div,img,ul,li,h1,h2,h3,header,footer,nav,p{padding: 0;margin:0;}
+body,div,img,ul,li,h1,h2,h3,header,footer,nav,p,dl,dt,dd{margin: 0;padding: 0;}
 li{list-style: none;}
 a{text-decoration: none;color: #666}
 a:link{color: #666}
 body{min-width: 1200px;}
 .main{width: 1200px;margin: 0 auto;}
+.page-loading {position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: #fff url(../Img/loading.gif) center center no-repeat;z-index: 5000;background-size: 60px 120px;}
 /* 头部 */
 #P-header{background: #fff;height: 96px;}
 #P-header::before{content: "";height:3px ;display: block;background: #e83428}
@@ -17,7 +18,7 @@ body{min-width: 1200px;}
 #P-header .logo a{vertical-align: middle;height: 42px;}
 #P-header .logo img{height: 42px;vertical-align: text-top}
 nav{float: left;line-height: 93px;font-size: 18px;}
-nav a{float: left;width: 127px;text-align: center}
+nav a{float: left;width: 106px;text-align: center}
 nav a:hover{color: #fff;background: url(../Img/navShade.png) top center no-repeat}
 nav a.active{color: #fff;background: url(../Img/navShade.png) top center no-repeat}
 .phone-code{float: right;position: relative;width: 200px;}

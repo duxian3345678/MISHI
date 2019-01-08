@@ -162,32 +162,32 @@
                 <h2><span>合作品牌</span></h2>
                 <p>COOPERATIVE BRAND</p>
             </div>
-            <ul class="brand-list">
-                <li><img src="skin/img/cp1.png" alt=""></li>
-                <li><img src="skin/img/cp2.png" alt=""></li>
-                <li><img src="skin/img/cp3.png" alt=""></li>
-                <li><img src="skin/img/cp4.png" alt=""></li>
-                <li><img src="skin/img/cp5.png" alt=""></li>
-                <li><img src="skin/img/cp6.png" alt=""></li>
-                <li><img src="skin/img/cp7.png" alt=""></li>
-                <li><img src="skin/img/cp8.png" alt=""></li>
-                <li><img src="skin/img/cp9.png" alt=""></li>
-                <li><img src="skin/img/cp10.png" alt=""></li>
-                <li><img src="skin/img/cp11.png" alt=""></li>
-                <li><img src="skin/img/cp12.png" alt=""></li>
-                <li><img src="skin/img/cp13.png" alt=""></li>
-                <li><img src="skin/img/cp14.png" alt=""></li>
-                <li><img src="skin/img/cp15.png" alt=""></li>
-                <li><img src="skin/img/cp16.png" alt=""></li>
-                <li><img src="skin/img/cp17.png" alt=""></li>
-                <li><img src="skin/img/cp18.png" alt=""></li>
-                <li><img src="skin/img/cp19.png" alt=""></li>
-                <li><img src="skin/img/cp20.png" alt=""></li>
-                <li><img src="skin/img/cp21.png" alt=""></li>
-                <li><img src="skin/img/cp22.png" alt=""></li>
-                <li><img src="skin/img/cp23.png" alt=""></li>
-                <li><img src="skin/img/cp24.png" alt=""></li>
-                <li><img src="skin/img/cp25.png" alt=""></li>
+            <ul class="brand-list" id="lazy-Img">
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp1.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp2.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp3.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp4.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp5.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp6.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp7.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp8.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp9.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp10.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp11.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp12.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp13.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp14.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp15.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp16.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp17.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp18.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp19.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp20.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp21.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp22.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp23.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp24.png" alt=""></li>
+                <li><img src="Skin/Img/load.jpg" lazy-src="skin/img/cp25.png" alt=""></li>
             </ul>
         </div>
     </div>
@@ -224,5 +224,9 @@
         </div>
     </footer>
 </body>
-
+<script src="skin/JS/lazeload.js"></script>
+<script>
+    var x = new LazyLoad();
+    x.init();
+</script>
 </html>

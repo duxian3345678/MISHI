@@ -51,10 +51,10 @@
         </div>
         <div class="model-3">
             <div class="main store-3">
-                <ul class="store-list" v-for="stores in storeList">
+                <ul class="store-list" id="lazy-Img" v-for="stores in storeList">
                     <li>
                         <a :href="stores.url" target="_blank">
-                            <img src="skin/img/store-list.png" alt="">
+                            <img src="Skin/Img/store-list.png"  alt="">
                             <p>{{stores.cityname}}</p>
                         </a>
                     </li>
@@ -62,8 +62,6 @@
             </div>
         </div>
     </div>
-
-
     <footer id="footer">
         <div class="main">
             <div class="dynamic">
